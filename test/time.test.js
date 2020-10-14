@@ -16,42 +16,42 @@ describe('Time', function() {
 
     it("Conversions should not be empty", function() {
         let minutes = new Time("minutes", ["seconds", "hours", "days", "weeks"]);
-        assert.notStrictEqual(minutes.getStandardConversion(30), "");
+        assert.notStrictEqual(minutes.getStandardConversion(40), "");
     });
 
     it("Standard Conversions should not be empty", function () {
         let minutes = new Time("minutes", ["seconds", "hours", "days", "weeks"]);
-        assert.notStrictEqual(minutes.getAllConversions(20, 5), "");
+        assert.notStrictEqual(minutes.getAllConversions(10, 3), "");
     });
 
     it("Conversions should not be empty", function() {
         let hours = new Time("hours", ["seconds", "minutes", "days", "weeks"]);
-        assert.notStrictEqual(hours.getStandardConversion(30), "");
+        assert.notStrictEqual(hours.getStandardConversion(20), "");
     });
 
     it("Standard Conversions should not be empty", function () {
         let hours = new Time("hours", ["seconds", "minutes", "days", "weeks"]);
-        assert.notStrictEqual(hours.getAllConversions(20, 5), "");
+        assert.notStrictEqual(hours.getAllConversions(10, 2), "");
     });
 
     it("Conversions should not be empty", function() {
         let days = new Time("days", ["seconds", "minutes", "hours", "weeks"]);
-        assert.notStrictEqual(days.getStandardConversion(30), "");
+        assert.notStrictEqual(days.getStandardConversion(50), "");
     });
 
     it("Standard Conversions should not be empty", function () {
         let days = new Time("days", ["seconds", "minutes", "hours", "weeks"]);
-        assert.notStrictEqual(days.getAllConversions(20, 5), "");
+        assert.notStrictEqual(days.getAllConversions(15, 3), "");
     });
 
     it("Conversions should not be empty", function() {
         let weeks = new Time("weeks", ["seconds", "minutes", "hours", "days"]);
-        assert.notStrictEqual(weeks.getStandardConversion(30), "");
+        assert.notStrictEqual(weeks.getStandardConversion(20), "");
     });
 
     it("Standard Conversions should not be empty", function () {
         let weeks = new Time("weeks", ["seconds", "minutes", "hours", "days"]);
-        assert.notStrictEqual(weeks.getAllConversions(20, 5), "");
+        assert.notStrictEqual(weeks.getAllConversions(25, 3), "");
     });
 
     it("Should allowed null", function() {
