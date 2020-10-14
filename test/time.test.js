@@ -53,4 +53,9 @@ describe('Time', function() {
         let weeks = new Time("weeks", ["seconds", "minutes", "hours", "days"]);
         assert.notStrictEqual(weeks.getAllConversions(20, 5), "");
     });
+
+    it("Should allowed null", function() {
+        let time = new Time();
+        assert.notStrictEqual(time, null);
+    });
 });
